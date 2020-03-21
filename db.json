@@ -1,0 +1,37 @@
+{
+  "notes": [
+    {
+      "title": "Ghi chú đầu tiên",
+      "content": "Đây là 1 pet project của mình - Domieeeeee",
+      "color": "primary"
+    },
+    {
+      "title": "Ghi chú thứ 2",
+      "content": "Tôi đã làm project này trong 1 tiếng đó ^^",
+      "color": "success"
+    },
+    {
+      "title": "Ghi chú thứ 3",
+      "content": "Tôi đang test nên sẽ viết gì đó dài 1 tý. Hmmm, mai sẽ tìm hiểu về crawl data với Python và Javascript. Hehe, có thật nhiều thứ để làm :3",
+      "color": "danger"
+    },
+    {
+      "email": "dung",
+      "password": "ahahah"
+    },
+    {
+      "email": "dung",
+      "password": "1231231"
+    },
+    {
+      "email": "dung",
+      "password": "1"
+    }
+  ],
+  "users": [
+    {
+      "email": "dungngocmd@gmail.com",
+      "password": "domiee13"
+    }
+  ]
+}
