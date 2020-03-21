@@ -6,6 +6,6 @@ var router = express.Router();
 
 router.get('/', controller.signup);
 
-// router.post('/', controller.postSignup);
+router.post('/', controller.postSignup);
 
 module.exports = router;
