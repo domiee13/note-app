@@ -5,7 +5,7 @@ var adapter = new FileSync('db.json');
 var db = lowdb(adapter);
 
 // Set some defaults (required if your JSON file is empty)
-db.defaults({notes:[], users:[]})
+db.defaults({users:[]})
 	.write()
 
 

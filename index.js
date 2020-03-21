@@ -3,8 +3,9 @@ var bodyParser = require('body-parser');
 var db = require('./db');
 
 var authRoutes = require('./routes/auth.route');
-
-var authController = require('./controllers/auth.controller');
+var noteRoutes = require('./routes/note.route');
+var createRoutes = require('./routes/create.route');
+var signupRoutes = require('./routes/signup.route');
 
 var app =express();
 
@@ -18,25 +19,13 @@ app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-
 app.use(express.static('./public'));
 
 app.use('/login', authRoutes);
+app.use('/notes', noteRoutes);
+app.use('/create', createRoutes);
+app.use('/signup', signupRoutes);
 
 app.get('/', function(req,res){
 	res.render('index');
 });
-
-app.get('/notes', function(req,res){
-	res.render('notes/index',{
-		notes: db.get('notes').value()
-	});
-});
-
-app.get('/create', function(req,res){
-	res.render('notes/create');
-});
-app.post('/create', function(req, res){
-	db.get('notes').push(req.body).write();
-	console.log(req.body);
-	res.redirect('/notes');
-})
 
 app.listen(port,function(req,res){
 	console.log('App listening on port '+ port + '...');

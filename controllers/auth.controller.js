@@ -24,5 +24,7 @@ module.exports.postLogin = function(req,res){
 		});
 		return;
 	}
+	res.locals.user = user;
+	console.log(user);
 	res.redirect('/');
 };
