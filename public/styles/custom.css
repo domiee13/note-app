@@ -1,9 +1,42 @@
-/*.card:hover{
-	background-color: red !important;
-	color: red !important;
-}*/
+html, body {margin:0;padding:0;height:100%;}
+
 
 .login{
 	display: flex !important;
 	justify-content: end !important;
+}
+
+.card-header{
+    font-weight: bold;
+    font-size: 22px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#overlay{
+    background-color: rgba(0,0,0,0);
+    height: 100%;
+    width: 100%;    
+}
+
+#overlay:hover{
+    background-color: rgba(0, 0, 0, 1);
+    color:black;
+}
+
+#overlay #option-btn{
+    top: 36%;   
+    left: 36%;   
+    position:absolute ;
+    visibility: hidden;
+}
+
+#overlay:hover #option-btn{
+    visibility: visible;    
 }

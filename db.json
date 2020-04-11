@@ -4,7 +4,24 @@
       "userId": "ZRr7ucNZ9",
       "name": "Domieeeeee",
       "email": "dungngocmd@gmail.com",
-      "password": "3402773480a86a158499ae545bc5e86b"
+      "password": "3402773480a86a158499ae545bc5e86b",
+      "notes": [
+        {
+          "color": "primary",
+          "title": "My first note",
+          "content": "Test note app ^^"
+        },
+        {
+          "color": "success",
+          "title": "Hello ",
+          "content": "Hello world"
+        },
+        {
+          "color": "danger",
+          "title": "Bổ sung tính năng cho note-app",
+          "content": "Thêm xóa, sửa ghi chú"
+        }
+      ]
     }
   ]
 }

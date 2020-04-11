@@ -1,19 +1,20 @@
 extends ../layouts/common
 block content
-	h1 Create new note
-	form(action="/create", method="POST")
-		.form-group
-			label(for="title").font-weight-bold Tiêu đề 
-			input#title.form-control(placeholder="Nhập tiêu đề ghi chú", name="title" required)
-		.form-group
-			label(for="content").font-weight-bold Nội dung ghi chú 
-			input#content.form-control(placeholder="Nhập nội dung ghi chú", name="content" required)
-		.form-group
-			p.font-weight-bold Chọn màu cho ghi chú
-			button.btn.btn-outline-primary.mr-2(name="color", type='submit', value="primary") Blue  
-			button.btn.btn-outline-secondary.mr-2(name="color",type='submit', value="secondary") Gray  	
-			button.btn.btn-outline-success.mr-2(name="color",type='submit', value="success") Green  
-			button.btn.btn-outline-danger.mr-2(name="color",type='submit', value="danger") Red
-			button.btn.btn-outline-warning.mr-2(name="color",type='submit', value="warning") Yellow 
-			button.btn.btn-outline-info.mr-2(name="color",type='submit', value="info") Aqua 
-			button.btn.btn-outline-dark.mr-2(name="color",type='submit', value="dark") Black   
+    .small-box
+        h1 Create new note
+        form(action="/create", method="POST")
+            .form-group
+                label(for="title").font-weight-bold Tiêu đề 
+                input#title.form-control(placeholder="Nhập tiêu đề ghi chú", name="title" required)
+            .form-group
+                label(for="content").font-weight-bold Nội dung ghi chú 
+                input#content.form-control(placeholder="Nhập nội dung ghi chú", name="content" required)
+            .form-group
+                p.font-weight-bold Chọn màu cho ghi chú
+                button.btn.btn-outline-primary.mr-2(name="color", type='submit', value="primary") Blue  
+                button.btn.btn-outline-secondary.mr-2(name="color",type='submit', value="secondary") Gray   
+                button.btn.btn-outline-success.mr-2(name="color",type='submit', value="success") Green  
+                button.btn.btn-outline-danger.mr-2(name="color",type='submit', value="danger") Red
+                button.btn.btn-outline-warning.mr-2(name="color",type='submit', value="warning") Yellow 
+                button.btn.btn-outline-info.mr-2(name="color",type='submit', value="info") Aqua 
+                button.btn.btn-outline-dark.mr-2(name="color",type='submit', value="dark") Black   

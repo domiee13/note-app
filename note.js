@@ -1,5 +1,6 @@
-function Note(title, content){
-	this.title = title;
+function Note(color, title, content){
+    this.color = color;
+    this.title = title;
 	this.content = content;
 };
 
